@@ -6,7 +6,7 @@ import { fetchImages } from './fetchImages';
 
 const search_window = document.querySelector('input[name="searchQuery"]');
 const search_btn = document.querySelector('button[type="submit"]');
-const imagesForm = document.getElementById('search-form');
+const imagesForm = document.querySelector('.search-form');
 const gallery = document.querySelector('.gallery');
 const loadMore = document.getElementById('load-more');
 

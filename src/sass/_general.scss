@@ -8,14 +8,14 @@ body {
   padding: 16px;
 }
 
-#search-form {
-  background-color: royalblue;
-  height: 50px;
-  width: 100%;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.btn {
-  margin: 0 auto;
+svg {
+  vertical-align: middle;
 }
 
 .hidden {
