@@ -2,37 +2,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
   margin-bottom: 50px;
 
   &__card {
-    width: 23%;
-    display: block;
-    margin: 10px;
+    width: 22%;
     border-radius: 10px;
     border-width: 0px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
-  &__link {
-    display: block;
-    object-fit: cover;
-  }
+  // &__link {
+
+  // }
 
   &__img {
-    display: block;
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__info {
-    heigth: 50px;
     display: flex;
     justify-content: space-between;
-    margin: 5px 15px;
+    margin: 5px 20px;
     text-align: center;
-    font-size: 14px;
 
     &-item {
       display: flex;

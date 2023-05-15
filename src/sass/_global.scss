@@ -5,14 +5,36 @@ body {
   background-color: #fff;
   color: #2f2f37;
   // max-width: 960px;
-  padding: 16px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 8px;
+    max-width: 767px;
+    /* Style tabletu */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 10px;
+    max-width: 1279px;
+    /* Style desktopu */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 14px;
+    max-width: 1600px;
+  }
 }
 
 img {
   display: block;
   max-width: 100%;
-  object-fit: fill;
 }
 
 svg {
