@@ -1,5 +1,4 @@
 export { fetchImages };
-import Notiflix from 'notiflix';
 import axios from 'axios';
 
 const API_KEY = '36382729-c052200aae6cb40748bb0f135';
