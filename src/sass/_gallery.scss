@@ -1,0 +1,53 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__card {
+    width: 23%;
+    display: block;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  &__link {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+  &__info {
+    heigth: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+    text-align: center;
+    font-size: 14px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      color: black;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 16px;
+  }
+}

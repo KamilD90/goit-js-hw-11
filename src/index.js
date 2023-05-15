@@ -7,6 +7,7 @@ import { fetchImages } from './fetchImages';
 const search_window = document.querySelector('input[name="searchQuery"]');
 const search_btn = document.querySelector('button[type="submit"]');
 const imagesForm = document.querySelector('.search-form');
+console.log(imagesForm);
 const gallery = document.querySelector('.gallery');
 const loadMore = document.getElementById('load-more');
 
@@ -82,22 +83,26 @@ function renderImages(data) {
         downloads,
       }) => {
         return `
-        <div class="photo-card">
-            <a class="image-link" href="${largeImageURL}"> 
-                <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+        <div class="gallery__card">
+            <a class="gallery__link" href="${largeImageURL}"> 
+                <img src="${webformatURL}" alt="${tags}" loading="lazy" calss="gallery__img" />
             </a>
-            <div class="info">
-                <p class="info-item">
-                    <b>Likes ${likes}</b>
+            <div class="gallery__info">
+                <p class="gallery__info-item">
+                    <b>Likes </b>
+                    <span>${likes}</span>
                 </p>
-                <p class="info-item">
-                    <b>Views ${views}</b>
+                <p class="gallery__info-item">
+                    <b>Views </b>
+                 <span>   ${views}</span>
                 </p>
-                <p class="info-item">
-                    <b>Comments ${comments}</b>
+                <p class="gallery__info-item">
+                    <b>Comments</b>
+                    <span> ${comments}</span>
                 </p>
-                <p class="info-item">
-                    <b>Downloads ${downloads}</b>
+                <p class="gallery__info-item">
+                    <b>Downloads </b>
+                  <span>  ${downloads}</span>
                 </p>
             </div>
         </div>`;
@@ -110,10 +115,13 @@ function renderImages(data) {
 }
 
 function createPreviewOfImages() {
-  const lightbox = new SimpleLightbox('.gallery .photo-card a  ', {
-    captions: true,
-    captionsData: 'alt',
-    captionsPosition: 'bottom',
-    captionDeley: 250,
-  });
+  const lightbox = new simpleLightbox(
+    '.gallery .gallery__card .gallery__link  ',
+    {
+      captions: true,
+      captionsData: 'alt',
+      captionsPosition: 'bottom',
+      captionDeley: 250,
+    }
+  );
 }

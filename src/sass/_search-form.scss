@@ -1,14 +1,19 @@
 .search-form {
   height: auto;
-  width: 100vw;
+  width: 100%;
   padding: 10px 0;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   background-color: #4169e1;
 
   &__input {
-    padding: 5px;
-    width: 100px;
+    padding: 0 10px;
+    width: 200px;
+    outline: none;
+    &::placeholder {
+      color: grey;
+    }
   }
 
   &__btn {
@@ -18,6 +23,5 @@
 
   &__icon {
     fill: #2f2f37;
-    padding: 0 10px;
   }
 }
