@@ -41,8 +41,7 @@ async function fetchImages(searchTerm, page) {
       },
     };
 
-    const response = await axios.get(API_URL, config);
-    return response.data;
+    return await axios.get(API_URL, config);
   } catch (error) {
     throw Notiflix.Notify.error('Wystąpił błąd podczas pobierania zdjęć.');
   }
