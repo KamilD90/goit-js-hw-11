@@ -1,0 +1,27 @@
+.search-form {
+  height: auto;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #4169e1;
+
+  &__input {
+    padding: 5px 10px;
+    width: 200px;
+    outline: none;
+    &::placeholder {
+      color: grey;
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    border: 4px 4px 0 0;
+  }
+
+  &__icon {
+    fill: #2f2f37;
+  }
+}
